@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Arvo|EB+Garamond|Tienne|Raleway|Sorts+Mill+Goudy" rel="stylesheet">
+  <title>Oliver Woodworks</title>
+</head>
+
+<body>
+  <!-- <div class="container-fluid"> -->
+  <div class="jumbotron jumbotron-fluid">
+    <!-- <p style="text-align:left;"><img id="" src="images/back.svg"></p> -->
+    <p style="text-align:center;"><img id="logo" src="images/dotlogo.svg"></p>
+    <!-- <p style="text-align:right;"><img id="" src="images/brown.svg"></p> -->
+
+  </div>
+
+
+  <div class="tool-cards">
+    <!-- <p> -->
+    <div class="first-tool">
+      <p id="hammer"><img src="images/hammer2.svg"></p>
+      <p class="instagram" role="button"><img src="images/insta.svg"><br>instagram</p>
+    </div>
+
+    <div class="second-tool">
+      <p id="lathe"><img src="images/lathe2.svg"></p>
+      <p class="email" role="button">
+        <a href="mailto:arrie@oliverwoodworks.com">
+          <img src="images/mail.svg"><br>email</p>
+        </a>
+    </div>
+
+    <div class="third-tool">
+      <p id="twisty"><img src="images/twisty2.svg"></p>
+      <p class="gallery" role="button"><img src="images/gallery.svg" onclick="openModal();currentSlide(1)"><br>gallery</p>
+    </div>
+
+    <div class="fourth-tool">
+      <p id="saw"><img src="images/saw2.svg"></p>
+      <p class="about" role="button"><img src="images/bio.svg"><br>about</p>
+    </div>
+
+    <div class="fifth-tool">
+      <p id="chisel"><img src="images/chisel2.svg"></p>
+      <p class="reviews" role="button">
+        <img src="images/reviews.svg">
+        <br> reviews
+      </p>
+    </div>
+    <!-- </p> -->
+  </div>
+
+  <!-- The about modal -->
+  <div id="about-modal" class="modal">
+    <span class="close">&times;</span>
+    <div class="about-modal-content">
+
+      <p>Oliver Woodworks is a small business run by me, Arrie Oliver: someone whose greatest passion in life is woodworking. I love being able to share that with others, and I take great care to design the perfect piece for each person that allows me to.
+        I make everything myself, custom to order, and try my best to locally source materials. Please feel free to contact me with any of your woodworking needs.</p>
+      <p class="quoter">-Arrie Oliver</p>
+    </div>
+  </div>
+
+  <!-- The gallery modal -->
+  <div id="gallery-modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="gallery-modal-content" style="text-align: center;">
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 11</div>
+        <img src="images/table.jpg">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 11</div>
+        <img src="images/table2.jpg">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 11</div>
+        <img src="images/table3.jpg">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 11</div>
+        <img src="images/table5.jpg">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 11</div>
+        <img src="images/desk4.jpg">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 9</div>
+        <img src="images/desk.jpg">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">7 / 11</div>
+        <img src="images/desk2.jpg">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">8 / 11</div>
+        <img src="images/desk3.jpg">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">9 / 11</div>
+        <img src="images/brush2.jpg">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">10 / 11</div>
+        <img src="images/brush3.jpg">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">11 / 11</div>
+        <img src="images/brush.jpg">
+      </div>
+
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+  </div>
+
+  <!-- The review modal -->
+  <div id="review-modal" class="modal">
+    <span class="close">&times;</span>
+    <div class="review-modal-content">
+
+      <div class="review-slide">
+        <div class="numbertext">1 / 4</div>
+        <p>
+          "Arrie's gorgeous work made my home office not only some place I actively want to work again, but a space in which I find myself spending spare time on the weekend!"
+        </p>
+        <p class="quoter">
+          - E.S.
+        </p>
+
+      </div>
+
+      <div class="review-slide">
+        <div class="numbertext">2 / 4</div>
+        <p>
+          "You are amazing! We love our new table! We'll get a lifetime of family meals together out of it!"
+        </p>
+        <p class="quoter">
+          - N.P.
+        </p>
+
+
+      </div>
+      <div class="review-slide">
+        <div class="numbertext">3 / 4</div>
+        <p>
+          "The desk is exactly what we wanted and MORE! You were great at walking us through the whole process and very patient with two very picky people. Thank you!!"
+        </p>
+        <p class="quoter">
+          - R.J.
+        </p>
+      </div>
+
+
+      <div class="review-slide">
+        <div class="numbertext">4 / 4</div>
+        <p>
+          "Arrie is the best! He was great about coming into our space and talking with us about anything and everything related to the design of our table. He made sure that we felt totally confident and satisfied in our decisions and made us something we couldn't
+          have been happier with!"
+        </p>
+        <p class="quoter">
+          - J.J.
+        </p>
+      </div>
+
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusReviewSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusReviewSlides(1)">&#10095;</a>
+    </div>
+  </div>
+  <!-- modal content -->
+
+  </div>
+  <!-- container div -->
+
+</body>
+
+<script>
+  var reviewSlideIndex = 1;
+  showReviewSlides(reviewSlideIndex);
+
+  // Next/previous controls
+  function plusReviewSlides(m) {
+    showReviewSlides(reviewSlideIndex += m);
+  }
+
+  // Thumbnail image controls
+  function currentReviewSlide(m) {
+    showReviewSlides(reviewSlideIndex = m);
+  }
+
+  function showReviewSlides(m) {
+    var i;
+    var reviewSlides = $(".review-slide");
+    if (m > reviewSlides.length) {
+      reviewSlideIndex = 1
+    }
+    if (m < 1) {
+      reviewSlideIndex = reviewSlides.length
+    }
+    for (i = 0; i < reviewSlides.length; i++) {
+      reviewSlides[i].style.display = "none";
+    }
+    reviewSlides[reviewSlideIndex - 1].style.display = "block";
+  }
+
+  /////////////////////////////////////////////////////////
+
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = $(".mySlides");
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+      slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
+  }
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.js "></script>
+<script src="app.js "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js "></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js "></script>
+
+</html>
