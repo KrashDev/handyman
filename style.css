@@ -60,9 +60,26 @@ button.start {
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
+/* --------- header-text section -----------*/
+
+.header-text {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 2%;
+  border-bottom: 3px solid #333;
+  width: 30%;
+}
+
+/* --------- header-text section -----------*/
+
+/*---------------------------------------------------------------------------*/
+
 /* --------- what section -----------*/
 
-.what {
+.services {
+  /* text-transform: uppercase; */
+  height: 500px;
   text-align: center;
   font-size: 20px;
   padding: 5% 18% 5% 18%;
@@ -75,8 +92,34 @@ button.start {
 /* --------- reviews section -----------*/
 
 .reviews {
+  /* text-transform: uppercase; */
   height: 500px;
   background: #333333;
 }
 
 /* --------- reviews section -----------*/
+
+/*---------------------------------------------------------------------------*/
+
+/* --------- reviews section -----------*/
+
+.message {
+  /* text-transform: uppercase; */
+  height: 500px;
+  font-size: 20px;
+  text-align: center;
+  padding: 5% 18% 5% 18%;
+}
+
+/* --------- reviews section -----------*/
+
+/*---------------------------------------------------------------------------*/
+
+/* --------- footer section -----------*/
+
+footer {
+  background: #333333;
+  height: 300px;
+}
+
+/* --------- footer section -----------*/
