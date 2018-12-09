@@ -5,14 +5,32 @@ body {
 /* --------- navbar -----------*/
 
 nav {
+  height: 75px;
   font-size: 17px;
   text-transform: uppercase;
-  background-color: #000000;
+  background-color: #ffffff;
+}
+
+.navbar-nav>li>a {
+  padding-top: 25px;
 }
 
 nav a {
+  padding-top: 25px;
+  text-align: center;
   text-decoration: none;
-  color: #ffffff;
+  color: #333333;
+}
+
+a.navbar-brand img {
+  height: 90px;
+  margin-top: -10%;
+}
+
+.social-icons img {
+  margin-top: 11px;
+  height: 50px;
+  /* box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2); */
 }
 
 .main img {
@@ -25,12 +43,24 @@ nav a {
 .main-text {
   text-align: center;
   position: absolute;
-  margin-top: -7%;
+  margin-top: -26%;
   color: #ffffff;
-  font-size: 70px;
+  font-size: 50px;
   margin-left: 10%;
   text-transform: uppercase;
 }
+
+button.start {
+  border-radius: 5px;
+  font-size: 25px;
+  background-color: #5d5dbb;
+  text-transform: uppercase;
+  padding: 10px 25px 10px 25px;
+  border: none;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* --------- what section -----------*/
 
 .what {
   text-align: center;
@@ -38,4 +68,15 @@ nav a {
   padding: 5% 18% 5% 18%;
 }
 
-/* --------- header section -----------*/
+/* --------- what section -----------*/
+
+/*---------------------------------------------------------------------------*/
+
+/* --------- reviews section -----------*/
+
+.reviews {
+  height: 500px;
+  background: #333333;
+}
+
+/* --------- reviews section -----------*/
